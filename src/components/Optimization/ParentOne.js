@@ -7,6 +7,7 @@ function ParentOne({children}){
     const [count,setCount]=useState(0)
 
     console.log('Parent render');
+    alert('parent render')
     return(
         <div>
             <button onClick={()=>setCount(prevCount=>prevCount+1)}>Count - {count}</button>
